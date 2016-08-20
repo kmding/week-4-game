@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://code.jquery.com/jquery.js"></script>
+</head>
+<body>
+
+
+<button class= uno>Uno</button>
+<button class= Dos>Dos</button>
+<button class= Tres>Tres</button>
+<button class= Cuatro>Cuatro</button>
+
+<script type="text/javascript">
+//<CompsNumber>//	
+var computersNumber = Math.floor(Math.random()*500 + 100);
+//your numbers//
+var randoNumboOne = Math.floor(Math.random()*50 + 1);
+var randoNumboTwo = Math.floor(Math.random()*50 + 1);
+var randoNumboThree = Math.floor(Math.random()*50 + 1);
+var randoNumboFour = Math.floor(Math.random()*50 + 1);
+//your results//
+var whatYouHaveNow = 0;
+var youWin = 0;
+var youLose = 0;
+
+//<Display CompsNumber>//
+console.log("this is the computer: " + computersNumber);
+
+//<buttons do stuff>//
+$(".uno").on("click", function(){
+	console.log("this is the random number: " + randoNumboOne);
+	whatYouHaveNow = whatYouHaveNow + randoNumboOne;
+	console.log(whatYouHaveNow);
+});
+
+$(".Dos").on("click", function(){
+	console.log("this is the random number 2: " + randoNumboTwo);
+	whatYouHaveNow = whatYouHaveNow + randoNumboTwo;
+	console.log(whatYouHaveNow);
+});
+
+$(".Tres").on("click", function(){
+	console.log("this is the random number 3: " + randoNumboThree);
+	whatYouHaveNow = whatYouHaveNow + randoNumboThree;
+	console.log(whatYouHaveNow);
+});
+
+$(".Cuatro").on("click", function(){
+	console.log("this is the random number 4: " + randoNumboFour);
+	whatYouHaveNow = whatYouHaveNow + randoNumboFour;
+	console.log(whatYouHaveNow);
+});
+
+
+</script>
+</body>
+</html>
