@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://code.jquery.com/jquery.js"></script>
+</head>
+<body>
+
+
+<button class= uno>Uno</button>
+<button class= Dos>Dos</button>
+<button class= Tres>Tres</button>
+<button class= Cuatro>Cuatro</button>
+<div>User: <span id = userCounter>0</span></div>
+
+<script type="text/javascript">
+//<CompsNumber>//	
+var computersNumber = [Math.floor(Math.random()*50 + 1)];
+var randomness = [];
+var userCounter = 0;
+
+//Generates 4 random numbers and pushes to an array randomness
+for(var i = 0; i <4; i++){
+	var randoNumbo = [Math.floor(Math.random()*50 + 1)];
+	randomness.push(randoNumbo);
+}
+
+//Setting the one attribute to the index 0 of randomness. *WIP
+var one = '<button>';
+one.attr('data-num', randomness[0]);
+
+
+$('.uno').html(one);
+
+
+//<Display CompsNumber>//
+console.log("this is the computer: " + computersNumber);
+
+//<buttons do stuff>//
+$(".uno").on("click", function(){
+	console.log(randomness[0]);
+	//adds the counter plus button num
+	userCounter = userCounter + parseInt($(this).data(num));
+	
+
+	$('userCounter').html(userCounter);
+});
+
+$(".Dos").on("click", function(){
+	console.log(randomness[1]);
+});
+
+$(".Tres").on("click", function(){
+	console.log(randomness[2]);
+
+});
+
+$(".Cuatro").on("click", function(){
+	console.log(randomness[3]);
+});
+
+</script>
+</body>
+</html>

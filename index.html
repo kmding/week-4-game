@@ -5,7 +5,6 @@
 </head>
 <body>
 
-
 <button class= uno>Uno</button>
 <button class= Dos>Dos</button>
 <button class= Tres>Tres</button>
@@ -26,6 +25,8 @@ var youLose = 0;
 
 //<Display CompsNumber>//
 console.log("this is the computer: " + computersNumber);
+console.log(youWin);
+console.log(youLose);
 
 //<buttons do stuff>//
 $(".uno").on("click", function(){
@@ -51,6 +52,16 @@ $(".Cuatro").on("click", function(){
 	whatYouHaveNow = whatYouHaveNow + randoNumboFour;
 	console.log(whatYouHaveNow);
 });
+
+if (whatYouHaveNow == computersNumber){
+	alert('You Win'); 
+	youWin++;
+}
+
+if (whatYouHaveNow > computersNumber){
+	alert('You Lose');
+	 youLose++;
+}
 
 
 </script>
