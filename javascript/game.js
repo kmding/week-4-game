@@ -1,10 +1,10 @@
 //<CompsNumber>//	
-var computersNumber = Math.floor(Math.random()*500 + 100);
+var computersNumber = Math.floor(Math.random()*120 + 19);
 //your numbers//
-var randoNumboOne = Math.floor(Math.random()*50 + 1);
-var randoNumboTwo = Math.floor(Math.random()*50 + 1);
-var randoNumboThree = Math.floor(Math.random()*50 + 1);
-var randoNumboFour = Math.floor(Math.random()*50 + 1);
+var randoNumboOne = Math.floor(Math.random()*12 + 1);
+var randoNumboTwo = Math.floor(Math.random()*12 + 1);
+var randoNumboThree = Math.floor(Math.random()*12 + 1);
+var randoNumboFour = Math.floor(Math.random()*12 + 1);
 //your results//
 var whatYouHaveNow = 0;
 var youWin = 0;
@@ -12,12 +12,12 @@ var youLose = 0;
 
 //New Game//
 function newGame(){
-	computersNumber = Math.floor(Math.random()*500 + 100);
+	computersNumber = Math.floor(Math.random()*120 + 19);
 	$('.computersNumber').html(computersNumber);
-	randoNumboOne = Math.floor(Math.random()*50 + 1);
-	randoNumboTwo = Math.floor(Math.random()*50 + 1);
-	randoNumboThree = Math.floor(Math.random()*50 + 1);
-	randoNumboFour = Math.floor(Math.random()*50 + 1);
+	randoNumboOne = Math.floor(Math.random()*12 + 1);
+	randoNumboTwo = Math.floor(Math.random()*12 + 1);
+	randoNumboThree = Math.floor(Math.random()*12 + 1);
+	randoNumboFour = Math.floor(Math.random()*12 + 1);
 	
 }
 
