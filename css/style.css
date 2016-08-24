@@ -1,0 +1,41 @@
+/*CSS*/
+
+button{
+	margin-bottom: 20px;
+	position: center;
+}
+
+	body{
+		background: url('../images/Background.jpg');
+		
+	}
+	
+	h1{
+		color: white;
+		
+	}
+
+	p{
+		color: white;
+		font-size: 20px;
+		
+	}
+
+	.computersNumber{	
+		color: white;
+		font-size: 30px;
+	}
+
+	.winner{
+		color: blue;
+	}
+
+	.loser{
+		color: red;
+	}
+
+	.yoCollection{
+		color: white;
+		font-size: 30px;
+	}
+

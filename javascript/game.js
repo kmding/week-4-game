@@ -10,6 +10,7 @@ var whatYouHaveNow = 0;
 var youWin = 0;
 var youLose = 0;
 
+	alert('January 20, 2017: Only two hours in his presidency, the country has begun to fall apart. Not wanting to lose anymore revenue, (seeing as only a third of the country manage to survive his inauguration) the president must "make good" on his outragious promise. In order to do so, he has charged "YOU" to mine for diamonds (as the president quoate: "it worked on the world of minecrafts.") Unfortunally, a set amount must be collected, for a larger sum would alert the people of the countries poverty. Save the country, make America better than "great again".')
 //New Game//
 function newGame(){
 	computersNumber = Math.floor(Math.random()*120 + 19);
@@ -18,6 +19,7 @@ function newGame(){
 	randoNumboTwo = Math.floor(Math.random()*12 + 1);
 	randoNumboThree = Math.floor(Math.random()*12 + 1);
 	randoNumboFour = Math.floor(Math.random()*12 + 1);
+	$('.yoCollection').html(whatYouHaveNow = 0);
 	
 }
 
@@ -58,24 +60,33 @@ $(".Cuatro").on("click", function(){
 	winOrLose();
 });
 
-//funcion to make the game work//
+//win or lose funcion //
 function winOrLose(){
+	var Victory = document.createElement('audio');
+	Victory.setAttribute('src',"Gamesounds/Mo cube.mp3")
+
+	var YoureFired = document.createElement('audio');
+	YoureFired.setAttribute('src',"Gamesounds/YoureFired.m4a")
 
 	if (whatYouHaveNow == computersNumber){
 		alert('You Win'); 
 		youWin++;
-		whatYouHaveNow =0;
+		whatYouHaveNow =0;'0';
 		console.log(youWin);
 		newGame();
 		$('.winner').html(youWin);
+		Victory.play();
+		
+
 	}
 
 	if (whatYouHaveNow > computersNumber){
 		alert('You Lose');
 		 youLose++;
-		 whatYouHaveNow= 0;
+		 whatYouHaveNow= 0;'0';
 		 console.log(youLose);
 		 newGame();
 		$('.loser').html(youLose);
+		YoureFired.play();
 	}
 };
